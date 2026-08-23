@@ -2,7 +2,11 @@
 
 My notes and writeups for the **TryHackMe AI Security** course.
 
-## Topics Covered
+## About
+
+This course focuses on the security of AI systems and the different ways they can be attacked and defended.
+
+Some of the major topics covered include:
 
 - Threat Modelling
 - Prompt Injection & Jailbreaking
@@ -10,20 +14,11 @@ My notes and writeups for the **TryHackMe AI Security** course.
 - Data Poisoning
 - RAG Security
 
+I'll add notes and writeups for each room as I complete the course.
+
 ## Rooms
 
-| Room | Status |
-|------|--------|
-| Threat Modelling | ⬜ |
-| Prompt Injection & Jailbreaking | ⬜ |
-| AI Supply Chain Security | ⬜ |
-| Data Poisoning | ⬜ |
-
-## About
-
-This course focuses on security threats against AI systems, including prompt injection, jailbreaking, supply-chain attacks, and data poisoning.
-
-I'll add my notes and writeups here as I complete each room.
+Room writeups will be added here as I progress through the course.
 
 ## Disclaimer
 
