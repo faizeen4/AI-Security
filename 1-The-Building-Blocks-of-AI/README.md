@@ -70,7 +70,7 @@ THM{4lg0r1thm_4g3nt}
 ## Task 05: Neural Networks and Deep Learning
 
 - A neural network is made up of layers of nodes, where each node represents a neuron and each connection between nodes acts as a synapse. The input layer receives raw data. The number of nodes it has depends on the data type: a 4x4 pixel image, for example, has 16 input nodes, one per pixel. The hidden layers in the middle process and refine that input, extracting increasingly complex features as the signal moves deeper. Each connection carries a weight that determines how much influence it has on the next layer. The output layer produces the final prediction.
-  ![Task 5.1](images/ai3.png)
+- ![Task 5.1](images/ai3.png)
 - When a network has more than three layers, it qualifies as a Deep Learning (DL) algorithm, hence the name.
 
 ### Question
