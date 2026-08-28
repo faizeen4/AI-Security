@@ -63,7 +63,8 @@ Model drift
 What's the flag?
 
 ### Answer
-PIC AI1
+
+![Task 2.1](images/ai1.png)
 THM{pr0mpt_1nj3ct10n_pwn3d}
 
 ## Task 03: AI-Enhanced Attacks
@@ -93,7 +94,8 @@ Phishing
 What's the flag?
 
 ### Answer
-PIC AI2
+
+![Task 3.1](images/ai2.png)
 THM{s0c_1nb0x_cl34r3d}
 
 ## Task 04: Defensive AI
@@ -132,7 +134,8 @@ Investigation
 What's the flag?
 
 ### Answer
-PIC AI3
+
+![Task 4.1](images/ai3.png)
 THM{4eg1s_1nc1d3nt_z3r0}
 
 ## Task 05: Securing AI
@@ -174,5 +177,5 @@ What's the flag?
 
 ### Answer
 
-PIC AI4
+![Task 6.1](images/ai4.png)
 THM{4l_fund4m3nt4ls_l1c3ns3}
