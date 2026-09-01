@@ -8,5 +8,7 @@
     - Understand the challenges that arise when you use AI for forensics investigations and the ethical/legal implications this has
     - Understand how AI impacts the DFIR investigation process
       
-## Task 02:
+## Task 02: The AI Forensics Landscape
+
+- 
 
