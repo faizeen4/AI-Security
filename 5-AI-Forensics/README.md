@@ -87,7 +87,11 @@ Dynamic Analysis
 
 ## Task 04: AI Legal & Ethical Implications
 
-- 
+- Explainability and Transparency: Many AI models are “black boxes”, meaning they don’t readily explain how they came to a conclusion. This clashes with a core tenet of forensics analysis, the need for transparency and defensibility of evidence interpretation.
+- Bias and Fairness: AI systems can unintentionally introduce bias, raising ethical and legal concerns about fairness and due process. ML models are trained on historical data; if that data contains skewed representations or prejudices, the model’s output will reflect them.
+- Accountability and Chain of Custody: n terms of trust and accountability, courts require that digital evidence be handled in a traceable and preservable manner and that integrity is preserved at each step.AI processes must be carefully documented and secured, and using on-premises or controlled systems can help achieve this and satisfy legal scrutiny.
+- Privacy and Data Protection: AI models thrive on large datasets, whether through training, processing or analysing; however, their use in investigations can trigger privacy and legal compliance issues. Public cloud servers may inadvertently expose sensitive evidence to third-party servers, violating privacy laws or court orders. Legal frameworks like GDPR may restrict how personal data is processed, even for law enforcement purposes.
+- The Verdict: While it is abundantly clear that AI can be a force of good, with its abilities enabling investigators to be more productive, efficient and effective than ever before in the pursuit of justice, it is also clear that this new tool needs to be wielded with a great amount of care. 
 
 ### Question
 
@@ -95,7 +99,7 @@ What legal test used in the U.S. assesses whether expert or scientific testimony
 
 ### Answer
 
-
+Daubert
 
 ### Question
 
@@ -103,7 +107,7 @@ What term describes AI models whose internal decision-making processes are diffi
 
 ### Answer
 
-
+Black Box
 
 ### Question
 
@@ -111,11 +115,22 @@ What real-world technology used by law enforcement has been shown to produce rac
 
 ### Answer
 
+Facial Recognition
 
 ### Question
 
 What technique allows machine learning to be performed without transferring sensitive data to a central server, helping preserve privacy?
 
 ### Answer
+
+Federated Learning
+
+## Task 05: Practical -The Digital Trail
+
+- The Client: RobbCo, founded by Robb House, is a titan in the software and automation industry famous for its system firmware and terminal operating systems.
+- The Case: A member of the SOC team awoke founder Robb House to report a suspected breach, citing a security system that flagged an off-the-clock login and other suspicious behaviour. They need the digital train followed ASAP to confirm if this is the case.
+- The Damage: On the phone, Mr House sounded very frantic, suggesting it was possible that the proprietary code for their most popular products: RETROS BIOS (their low-level firmware), MF Boot Agent (their secure and programmable bootloader) and Unified Operating System/UOS (their widely used operating system), was accessed as these were hosted on the breached system. It's up to you to find out.
+
+### Investigating
 
 
