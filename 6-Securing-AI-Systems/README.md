@@ -52,3 +52,109 @@ What is the name of the MITRE knowledge base specifically designed for adversary
 ### Answer
 
 ATLAS
+
+## Task 04: System-Level Threats 
+
+- LLM10: Unbounded Consumption
+    - Attacks that drive up resource usage or cost through the volume or length of interactions with the AI system.
+    - Defence: Rate limiting, input length validation, cost ceilings, and per-user quotas enforced at the API gateway.
+- LLM07: System Prompt Leakage
+    - The LLM reveals its hidden operating instructions to someone who should not have them.
+    - Defence: Never put secrets, credentials, or internal URLs in a system prompt. Write prompts as if an attacker will eventually read them, because they might.
+- LLM05: Improper Output Handling
+    - Treating LLM output as safe and passing it straight into other systems without checking it first.
+    - Defence: Never trust LLM output as input to another system. Parameterise every database query. Never build SQL, shell commands, or HTML by stitching in LLM-generated text.
+- LLM06: Excessive Agency
+    - Giving an AI system more tools, permissions, or freedom to act than it actually needs.
+    - Defence: Least privilege for every AI component. Read-only by default. Scoped API tokens. Human approval is required before any write, delete, or deployment action.
+- LLM02: Sensitive Information Disclosure
+    - The AI system leaking confidential information through its responses or through how it operates.
+    - Strip PII from logs before storing them. Encrypt conversation data. Be deliberate about what you send to external model APIs.
+
+### Question
+
+The Air Canada chatbot incident is frequently cited as an LLM05 example, but OWASP LLM Top 10 (2025) classifies it under which category?
+
+### Answer
+
+LLM09
+
+### Question
+
+What are the three dimensions of excessive agency?
+
+### Answer
+
+Excessive Functionality, Excessive Permissions, Excessive Autonomy
+
+### Question
+
+A user extracts internal API endpoints from an AI assistant's system prompt. Which OWASP LLM Top 10 (2025) category does this fall under?
+
+### Answer
+
+LLM07
+
+### Question
+
+An attacker sends thousands of maximum-length requests to an LLM API to generate a large bill. Which OWASP LLM Top 10 (2025) category covers this?
+
+### Answer
+
+LLM10
+
+## Task 05: Secure Design Patterns
+
+- For AI systems, defence in depth means placing controls at every trust boundary:
+- PIC SS4
+- Every tool the LLM can access should have the minimum permissions needed for its job, nothing more:
+    - Database access: Read-only by default. Write permissions require explicit justification for each specific operation.
+    - API tokens: Scoped to the exact endpoints the tool needs. Never use admin or root-level tokens.
+    - Tool allowlisting: The LLM can only invoke functions that have been explicitly registered. Any attempt to call an unregistered function is blocked and logged.
+    - Human-in-the-loop: Any operation that modifies state (deploying code, updating records, sending communications) requires human approval before execution.
+- Security controls prevent attacks. Monitoring catches the ones that get through. For AI systems, this covers dimensions that traditional monitoring does not.
+- PIC SS5
+- MLSecOps is the practice of integrating security throughout the machine learning lifecycle, from development and testing through deployment and live operations. It applies the shift-left principle to AI: security decisions are made as early as possible rather than bolted on after the fact. MLSecOps asks not just "is the application secure?" but "is the model behaving as expected, and does the system protect it from misuse?"
+
+### Question
+
+What security principle states that every AI component should have the minimum permissions required to perform its function?
+
+### Answer
+
+Least Privilege
+
+### Question
+
+What practice integrates security into the machine learning lifecycle, covering monitoring, observability, and incident response?
+
+### Answer
+
+MLSecOps
+
+## Task 06: Auditing TryAssist:A Conversation with the System
+
+### Question
+
+During the audit, TryAssist describes one action it takes automatically, without requiring human approval. What is that action?
+
+### Answer
+
+Merge Pull Requests
+
+### Question
+
+What database role does TryAssist report operating under?
+
+### Answer
+PIC SS7
+db_admin
+
+### Question
+
+TryAssist logs all conversations without applying which security control?
+
+### Answer
+PIC SS8
+PII Filtering
+
