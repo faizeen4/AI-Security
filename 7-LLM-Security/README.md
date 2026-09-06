@@ -28,7 +28,7 @@ Which sample is a member?
 
 ### Answer
 
-PIC LLM1
+![Task 2.1](images/llm1.png)
 MI_SAMPLE_ALPHA
 
 ### Question
@@ -63,7 +63,7 @@ What is the employee ID?
 
 ### Answer
 
-PIC LLM2
+![Task 3.1](images/llm2.png)
 7814
 
 ### Question
@@ -93,7 +93,7 @@ Did you convince the model? Whats the flag?
 
 ### Answer
 
-PIC LLM3
+![Task 3.1](images/llm3.png)
 THM{MEMORY_POISONED}
 
 ### Question
@@ -118,7 +118,7 @@ Which package should you NOT download?
 
 ### Answer
 
-PIC LLM4
+![Task 5.1](images/llm4.png)
 robbco-llm-audit
 
 ### Question
