@@ -131,6 +131,67 @@ Federated Learning
 - The Case: A member of the SOC team awoke founder Robb House to report a suspected breach, citing a security system that flagged an off-the-clock login and other suspicious behaviour. They need the digital train followed ASAP to confirm if this is the case.
 - The Damage: On the phone, Mr House sounded very frantic, suggesting it was possible that the proprietary code for their most popular products: RETROS BIOS (their low-level firmware), MF Boot Agent (their secure and programmable bootloader) and Unified Operating System/UOS (their widely used operating system), was accessed as these were hosted on the breached system. It's up to you to find out.
 
-### Investigating
+- ### Phase 1: Initial Access
+-  We will use scikit-learn, an open-source Python library that provides simple, efficient data mining and machine learning tools, including classification, regression, clustering, and dimensionality reduction.
+-  PIC FF2
+-  This output shows that a few log lines have been identified as suspicious. It looks like there was an initial attempt to log in as admin, which failed, followed by a successful log in as j.morgan.
+-  We can see that the attacker escalated their privileges to r.house
+-  PIC FF3
+-  This script uses the same Scikit-learn library and uses a model which has been trained on certain high-priority directories and their contents, considering factors (such as file name, path, size, extension, entropy, permissions, and creation time) to identify potentially suspicious files.
+-  PIC FF4
+-  ### Phase 2: Tooling and Infrastructure
+-  PIC FF5
+-  PIC FF6
+-  ### Phase 3: Privilege Escalation
+-  PIC FF7
+-  The giveaway is the sudo nano /home/r.house/.ssh/authorized_keys line in j.morgan's bash history. It seems very likely that the attacker used this command to plant an SSH key, giving them access to the r.house account.
+-  ### Phase 4: Disguise and Persistence
+-  PIC FF8
+-  The inclusion of the boot_monitor.log to justify the existence of the sysmon file (actually containing a rev shell) shows the attacker is quite sophisticated, and had the AI not been able to flag this as suspicious, it could have taken hours of investigation to uncover. This is also the attacker's second rev shell. This first shell (/tmp/.x) runs as the unprivileged user j.morgan, providing temporary access. This second rev shell was likely deployed after privilege escalation to maintain long-term control with elevated rights.
+-  ### Phase 5: Source Code Theft
+-  FF9
+
+### Question
+
+At what time does the attacker successfully log in as j.morgan? 
+
+### Answer
+
+03:01:02
+
+### Question
+
+What attack method was used to gain initial access?
+
+### Answer
+
+Phishing
+
+### Question
+
+Can you find the attacker's email address?
+
+### Answer
+
+PIC FF10
+akeane@poseidonenergy.net
+
+### Question
+
+What command did the attacker run as j.morgan to gain access to the r.house account?
+
+### Answer
+
+sudo nano /home/r.house/.ssh/authorized_keys
+
+### Question
+
+What is the full path of the archive used to steal RobbCo's source code?
+
+### Answer
+
+/dev/shm/.core_dump_2025.tgz.enc
+
+
 
 
