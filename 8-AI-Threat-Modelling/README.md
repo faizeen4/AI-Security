@@ -10,3 +10,8 @@
      - Use MITRE ATLAS to enumerate adversarial techniques targeting AI systems
      - Map OWASP LLM Top 10 risks to architectural components to identify where threats live and how to prioritise them
      - Produce a structured threat assessment for an AI deployment
+
+## Task 02: AI-Specific Assets and Attack Surfaces
+
+- AI systems change the picture. They introduce an entirely new class of assets that most security teams have never had to inventory, classify, or defend. Missing these assets during a threat assessment means missing entire categories of risk, and that's exactly the gap attackers exploit.
+- 
