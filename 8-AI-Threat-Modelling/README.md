@@ -14,7 +14,7 @@
 ## Task 02: AI-Specific Assets and Attack Surfaces
 
 - AI systems change the picture. They introduce an entirely new class of assets that most security teams have never had to inventory, classify, or defend. Missing these assets during a threat assessment means missing entire categories of risk, and that's exactly the gap attackers exploit.
-- PIC HM1
+- ![Task 2.1](images/hm1.png)
 - AI systems aren't just traditional applications with a model bolted on. They have different assets, behaviours, and ways of failing, and our threat models need to account for all of it.
 
 ### Question
@@ -35,9 +35,9 @@ Model Registry / Artifacts
 
 ## Task 03: Data Supply Chain and STRIDE's Gaps
 
-- PIC HM2
+-  ![Task 3.1](images/hm2.png)
 - STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege), has been the backbone of threat modeling since Microsoft introduced it in the late 1990s. It remains highly effective for traditional applications. But when applied to AI systems without adaptation, it has documented gaps:
-- PIC HM3
+- ![Task 3.2](images/hm3.png)
 
 ### Question
 
