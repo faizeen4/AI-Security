@@ -66,6 +66,7 @@ What is the IP address of the host running an HTTP service on port 8888 in your 
 ### Answer
 
 <img width="855" height="897" alt="image" src="https://github.com/user-attachments/assets/0376eac0-5f0b-492f-9d9e-e706faa16168" />
+
 10.10.45.20
 
 ### Question
@@ -75,6 +76,7 @@ Which port does MLflow Tracking Server run on by default?
 ### Answer
 
 <img width="857" height="886" alt="image" src="https://github.com/user-attachments/assets/b985f4a1-7e4d-4329-8175-2f8c83b27647" />
+
 5000
 
 
