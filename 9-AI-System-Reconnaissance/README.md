@@ -79,4 +79,6 @@ Which port does MLflow Tracking Server run on by default?
 
 5000
 
+## Task 03: Fingerprinting AI Services
+
 
