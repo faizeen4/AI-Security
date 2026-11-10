@@ -2,7 +2,7 @@
 
 ## Task 01: Introduction
 
-Learning Objectives
+- Learning Objectives
     - Explain what an AI supply chain is and how it differs from a traditional software supply chain
     - Identify the four key components of an AI supply chain (models, datasets, frameworks, dependencies)
     - Map the attack surface across model, dependency, data, and infrastructure layers
